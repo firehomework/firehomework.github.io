@@ -6,16 +6,16 @@ comment: true
 home_btn: true
 btn_text: true
 footer: true
-title: ""
-author: ""
-encrypted_text: true
+title: "index"
+author: "myself"
+encrypted_text: false
 permalink: /
 ---
 
-# PROJECT VeXEd - HACKER-STYLE PERSONAL HOMEPAGE
+# 松子腹地 - 谨防松鼠 欢迎页面
 
 <br>
-> pRoJEct-NeGYa is a hacker-like, highly-customizable theme for note-keeping, personal-website or CV.
+> 过得糟糕的人难以改变自己的现状，却总希望将来的人过得更好。一面是消极的自毁倾向，一面是积极的人性光辉。​
 
 ## Features
 
