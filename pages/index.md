@@ -12,169 +12,32 @@ encrypted_text: false
 permalink: /
 ---
 
-# 松子腹地 - 谨防松鼠 欢迎页面
+# 松子腹地 - 谨防松鼠
 
 <br>
 > 过得糟糕的人难以改变自己的现状，却总希望将来的人过得更好。一面是消极的自毁倾向，一面是积极的人性光辉。​
 
-## Features
+## 絮絮叨叨的废话
 
-- Highly customizable with user-friendly hacker-like design.
-- Easy to gather your notes or portfolios with multiple collection design.
-- Supports formula insertion with `MathJax`.
+该博客将会用于记录上课的学习资料，以及试图成体系的规划散乱的知识点，以更好评估自身水准。
 
-$$
-\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
-\mathbf{i} & \mathbf{j} & \mathbf{k} \\
-\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
-\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0 \\
-\end{vmatrix}
-$$
+偶尔可能会记录一些吐槽内容。
 
-- Supports code highlight with `Rouge`.
+左上角Archive处可以查看所有的文章。
 
-```python
-arr = [10, 7, 8, 9, 1, 5]
-n = len(arr)
-quickSort(arr,0,n-1)
-print ("Sorted array is:")
-for i in range(n):
-    print ("%d" %arr[i]),
-```
+而Home可以返回这个页面。
 
-- Decrypt and encrypt text (access token: 233):
-  - secret msg example:
-  <p class="encrypted" id="/MZAf/PKx9jpw8/Jnp7XQQFki2ibGnArZP46W+keVThXquhWwFROEFnbY8eC57Tw==">Encrypted content!</p>
+大部分知识点采用Markdown上课时记录而成。该页面下方的评论区使用Gitalk issue进行评论功能实现，如发现某个页面下方没有办法评论，请联系我进行ISSUE的注册。
 
-## Download and Documentation
+需要注意的是，由于记录的是散乱的学习资料，它们随时可能被修改，重新整合。
 
-[**pRoJEct VeXEd README (Github)**](https://github.com/akiritsu/pRoJEct-VeXEd)
+欢迎共同讨论学习问题。
 
-[Download ZIP files](https://codeload.github.com/akiritsu/pRoJEct-VeXEd/zip/master)
+——By Pinenut 2021-09-15
 
-[中文自述及使用教程](https://akiritsu.github.io/pRoJEct-VeXEd/readme-zhcn/)
+## 更新情况
 
-## More Samples
+- （等待ING）
+- 2021-09-15 更新主页面并删除无用博客
+- 2021-09-14 搭建博客完成
 
-### Font style and link
-
-normal **bold** _italic_ ~~strikethrough~~ `keyword` [Link to Google](www.google.com)
-
-### List
-
-1. ordered list item 1
-   1. sublist
-      1. subsublist
-
-- unordered list
-  - sublist
-
-### Table
-
-| Date         | Version   | Size    | Comment                |
-| :----------- | :-------- | :------ | :--------------------- |
-| Nov 11, 2018 | v2.14c    | 240 kb  | No irreversible damage |
-| Nov 12, 2018 | v2.14c    | 1230 kb | No irreversible damage |
-| Nov 13, 2018 | v2.14c    | 12kb    | No irreversible damage |
-| Nov 15, 2018 | v1.99 LTS | 4kb     | Irreversible damage    |
-
-### Diagram and Chart
-
-#### Pie Chart
-
-```mermaid
-pie
-    title Pie Chart
-    "Dogs" : 36
-    "Cats" : 85
-    "Rats" : 150
-    "Pheonix" : 120
-    "Elephant" : 330 
-```
-
-#### Sequence Diagram
-
-```mermaid
-sequenceDiagram
-    Alice->>Bob: Hello Bob, how are you?
-    alt is sick
-    Bob->>Alice: Not so good :(
-    else is well
-    Bob->>Alice: Feeling fresh like a daisy
-    end
-    opt Extra response
-    Bob->>Alice: Thanks for asking
-    end
-```
-
-#### Flow Chart
-
-```mermaid
-graph LR
-A[Hard edge] -->B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
-```
-
-### More Texts
-
-Λορεμ ιπσθμ δολορ σιτ αμετ, νονθμυ δολορεσ πρινcιπεσ εαμ αν, ρεγιονε σθσcιπιτ αccθσατα νε πρι, εα εαμ γραεcο μελιθσ αccθσαμ. Vολθπτθα δισσεντιασ τε ηασ, τε πρι σθασ ηαρθμ αδιπισcινγ. Qθο ατ ιθστο ταcιματεσ, μελ εραντ ρεπθδιανδαε ετ. Ετ τιμεαμ cονcεπταμ αccομμοδαρε νεc, ιδ σεα μελιορε λθπτατθμ. Αδ περσεcθτι cοντεντιονεσ θσθ. Ηομερο νοστρο θταμθρ εαμ εξ.
-
-Νεc ιδ λεγερε ρεγιονε διcερετ, vιμ εθ νιβη ιριθρε cορπορα. Αδ vιξ διcο νατθμ εσσεντ. Ιλλθδ αλιqθιδ ει σιτ, δοcτθσ vιδισσε δετραξιτ αν μεα. Ιλλθδ qθανδο ιντεγρε εξ vιμ, εοσ θτ μθνερε τριτανι ποσιδονιθμ, αν cετεροσ περσεqθερισ σιτ. Λατινε δισcερε vοcιβθσ πρι νο, vιμ cθ νοστρο μαλθισσετ vολθπταρια.
-
-### More Codes
-
-```python
-# Python program for implementation of Quicksort Sort
-
-# This function takes last element as pivot, places
-# the pivot element at its correct position in sorted
-# array, and places all smaller (smaller than pivot)
-# to left of pivot and all greater elements to right
-# of pivot
-def partition(arr,low,high):
-    i = ( low-1 )         # index of smaller element
-    pivot = arr[high]     # pivot
-
-    for j in range(low , high):
-
-        # If current element is smaller than or
-        # equal to pivot
-        if   arr[j] <= pivot:
-
-            # increment index of smaller element
-            i = i+1
-            arr[i],arr[j] = arr[j],arr[i]
-
-    arr[i+1],arr[high] = arr[high],arr[i+1]
-    return ( i+1 )
-
-# The main function that implements QuickSort
-# arr[] --> Array to be sorted,
-# low  --> Starting index,
-# high  --> Ending index
-
-# Function to do Quick sort
-def quickSort(arr,low,high):
-    if low < high:
-
-        # pi is partitioning index, arr[p] is now
-        # at right place
-        pi = partition(arr,low,high)
-
-        # Separately sort elements before
-        # partition and after partition
-        quickSort(arr, low, pi-1)
-        quickSort(arr, pi+1, high)
-
-# Driver code to test above
-arr = [10, 7, 8, 9, 1, 5]
-n = len(arr)
-quickSort(arr,0,n-1)
-print ("Sorted array is:")
-for i in range(n):
-    print ("%d" %arr[i]),
-
-# This code is contributed by Mohit Kumra
-```
