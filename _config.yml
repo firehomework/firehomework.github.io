@@ -12,54 +12,61 @@ bgtext              : "ABCFGHKLMNPQRSVWXYZabcdefghijklmnopqrstuvwxyz@#$%&*+-;/[]
 # 2. Your Collections
 # You can specify the order shown in Archive window. 
 # Keep it null if you want to show items in alphabetic order.
+# 根据测试，这玩意对中文水土不服，但alias有效，用拼音代替即可
+# 肯定要学的东西：编译原理，计算机组成原理，操作系统，软件测试，大数据hadoop
+# 准备有想法的东西：Unity，汇编，力扣
 collection_order    : 
   [
-    "posts",
-    "math",
-    "album",
-    "physics",
-    "biology",
-    "finance",
-    "physics",
+    "jisuanjizuchengyuanli",
+    "bianyiyuanli",
+    "caozuoxitong",
+    "ruanjianceshi",
+    "unity",
+    "huibian",
+    "leetcode",
     "my_notes",
-    "portfolio",
+    "hadoop",
   ]
 collections:
-  math:   
+  bianyiyuanli:   
     output          : true
     permalink       : /:collection/:title/
     sort_by         : date
-    alias           : "Mathematics"
-  portfolio:
+    alias           : "编译原理"
+  jisuanjizuchengyuanli:
     output          : true
     permalink       : /:collection/:title/
-    order: # specify post order manually
-      - portfolio3.md
-      - portfolio2.md
-      - portfolio1.md
-  album:
-    output          : true
-    permalink       : /:collection/:title/
+    alias           : "计算机组成原理"
     sort_by         : date
-  physics:
+    #order: # specify post order manually
+    #  - portfolio3.md
+    #  - portfolio2.md
+    #  - portfolio1.md
+  caozuoxitong:
     output          : true
     permalink       : /:collection/:title/
-  biology:
+    alias           : "操作系统"
+    sort_by         : date
+  ruanjianceshi:
     output          : true
     permalink       : /:collection/:title/
-  finance:
+    alias           : "软件测试"
+    sort_by         : date
+  hadoop:
     output          : true
     permalink       : /:collection/:title/
+    alias           : "HADOOP开发"
+    sort_by         : date
+#  finance:
+#    output          : true
+#    permalink       : /:collection/:title/
   my_notes:
     output          : true
     permalink       : /:collection/:title/
     # An alias should be given or the UNDERSCORE will appeared 
-    alias           : "My Notes"
-  posts:
-    output          : true
-
-# 3. Comment settings（disqus.com）
-# disqus_username     : akiritsu
+    alias           : "个人随笔"
+#  posts:
+#    output          : true
 
 # 4. Default page settings (WILL BE overwriten by front-matters of a page)
 defaults:
@@ -93,7 +100,7 @@ comments:
 # 5. Social Media Accounts
 email               : "https://github.com/akiritsu/pRoJEct-VeXEd" 
 linkedin            : 
-github              : "just-test" 
+github              : "firehomework" 
 gitlab              : 
 website             : "https://github.com/akiritsu/pRoJEct-VeXEd"
 twitter             : "just-test"
