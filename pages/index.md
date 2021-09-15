@@ -6,7 +6,7 @@ comment: true
 home_btn: true
 btn_text: true
 footer: true
-title: "index"
+title: "松子腹地 - 谨防松鼠"
 author: "myself"
 encrypted_text: false
 permalink: /
