@@ -26,6 +26,8 @@ collection_order    :
     "leetcode",
     "my_notes",
     "hadoop",
+    "tongyijianmo",
+    
   ]
 collections:
   bianyiyuanli:   
@@ -65,6 +67,12 @@ collections:
     permalink       : /:collection/:title/
     # An alias should be given or the UNDERSCORE will appeared 
     alias           : "个人随笔"
+  tongyijianmo:
+    output          : true
+    permalink       : /:collection/:title/
+    # An alias should be given or the UNDERSCORE will appeared 
+    alias           : "统一建模语言"
+    sort_by         : date
 #  posts:
 #    output          : true
 
