@@ -7,8 +7,8 @@ permalink           : /:title/
 description         : "正所谓学了也是白学。"
 markdown            : kramdown
 statement           : "Designed by DeerRIDER（设计者）, All Rights Reserved"
-bgtext              : "ABCFGHKLMNPQRSVWXYZabcdefghijklmnopqrstuvwxyz@#$%&*+-;/[]<>~" # texts randomly displayed in background
-
+#bgtext              : "ABCFGHKLMNPQRSVWXYZabcdefghijklmnopqrstuvwxyz@#$%&*+-;/[]<>~" # texts randomly displayed in background
+bgtext              : "崩霉郁闷沮丧冷漠厌烦阴沉疲乏劳累%#￥@呜啊ლ(′◉❥◉｀ლ)" # texts randomly displayed in background
 # 2. Your Collections
 # You can specify the order shown in Archive window. 
 # Keep it null if you want to show items in alphabetic order.
