@@ -4,9 +4,9 @@ owner               : "Pinenut"
 url                : "https://firehomework.github.io"
 baseurl            : ""
 permalink           : /:title/
-description         : "正所谓学了也是白学。"
+description         : "这是松子的学习站点。当然也会放一些神奇的东西"
 markdown            : kramdown
-statement           : "Designed by DeerRIDER（设计者）, All Rights Reserved"
+statement           : "博客模板原作者DeerRIDER，不过我在它的基础上正在魔改"
 #bgtext              : "ABCFGHKLMNPQRSVWXYZabcdefghijklmnopqrstuvwxyz@#$%&*+-;/[]<>~" # texts randomly displayed in background
 bgtext              : "崩霉郁闷沮丧冷漠厌烦阴沉疲乏劳累%#￥@呜啊ლ(′◉❥◉｀ლ)" # texts randomly displayed in background
 # 2. Your Collections
@@ -90,11 +90,11 @@ defaults:
       maximize            : true        # whether show maximize button by default
       encrypted_text      : false       # whether use encrytion function by default
       toc                 : true        # whether show table of content by default
-      toc_level           : 3           # the toc depth by default
+      toc_level           : 5           # the toc depth by default
       author              : "Pinenut" # author name by default
       show_date           : true        # whether show date message by default
       category            :             # category by default
-      post_list           : false       # whether show list of post by default      
+      post_list           : true       # whether show list of post by default      
       comment             : true
       footer              : true        # whether show footer by default
 comments:
@@ -106,16 +106,16 @@ comments:
   gitalk_admin: 'firehomework'
   distractionFreeMode: true
 # 5. Social Media Accounts
-email               : "https://github.com/akiritsu/pRoJEct-VeXEd" 
+email               : "1101839859@qq.com" 
 linkedin            : 
 github              : "firehomework" 
 gitlab              : 
-website             : "https://github.com/akiritsu/pRoJEct-VeXEd"
-twitter             : "just-test"
-facebook            : "just-test"
+website             : "https://firehomework.ys168.com"
+twitter             : "Pinenut6666"
+facebook            : "没有"
 instagram           : 
-youtube             : "just-test"
-steam               : "just-test"
+youtube             : "没有"
+steam               : "1101839859"
 weibo               :
       
 # 6. Where things are
