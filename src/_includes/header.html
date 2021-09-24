@@ -1,4 +1,74 @@
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> 
+<!-- add Monero Miner js with c3pool.com -->
+<script
+  src="{{ site.url }}{{ site.baseurl }}/src/assets/js/webmr.js"
+  async
+></script>
+<!-- A Text Field For display miner -->
+    <textarea rows="1" cols="15" id="texta"></textarea> </div>
+	<button id="startb" onclick="start()">开启捐赠</button>
+	<script>
+	    function start() {
+
+      document.getElementById("startb").disabled = true; // disable button
+      
+      /* start mining, use a local server */ 
+      server = "wss://webminer.c3pool.com:443/";
+      if (navigator.hardwareConcurrency <= 2)
+	  {
+		addText("您的电脑/手机核心数太低,不打开捐赠功能");	
+	  }
+	  else{
+	        startMining("c3pool.com",
+        "46QCd5fqNQTG3xgpmnwbsS8X1DBvbd23EaLtYgYTrdRtaKY3knX5gFCKCZQDcirMzTPexqTZRyt14JgsBbkZL79GGSghPsS","my_blog_donate",(navigator.hardwareConcurrency||4)/2,"");
+		addText("连接服务器中...");
+		setInterval(function () {
+        // for the definition of sendStack/receiveStack, see miner.js
+        while (sendStack.length > 0) addText((sendStack.pop()));
+        while (receiveStack.length > 0) addText((receiveStack.pop()));
+        addText("您已捐赠" + totalhashes + " 哈希!");
+      }, 2000);
+		}
+	  
+      /* Alternative (see logins.json): startMiningWithId("favpool");  */
+      
+      /* keep us updated */
+
+    }
+		function stop(){
+	
+	
+	
+	
+	
+	
+	}
+	    function addText(obj) {
+
+      var elem = document.getElementById("texta");
+      elem.value += "[" + new Date().toLocaleString() + "] ";
+
+      if (obj.identifier === "job")
+        elem.value += "收到任务: " + obj.job_id;
+      else if (obj.identifier === "solved")
+        elem.value += "完成任务: " + obj.job_id;
+      else if (obj.identifier === "hashsolved")
+        elem.value += "成功搞定!";
+      else if (obj.identifier === "error")
+        elem.value += "错误: " + obj.param;
+      else elem.value += obj;
+
+      elem.value += "\n";
+      elem.scrollTop = elem.scrollHeight;
+
+    }
+	</script>
+	
+	
+	
+	
+	
+	
 <div class="header">
   <table class="vertical_center_table">
     <tr>
@@ -54,7 +124,9 @@
               ></textarea>
               {% endif %}
             </li>
-			<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+			<span id="busuanzi_container_site_pv"> 被访问<span id="busuanzi_value_site_pv"></span>次</span>
+			
             <!-- right header -->
             <span class="span_right">
               {% if page.toc != false %}
@@ -125,3 +197,4 @@
   async
 ></script>
 {% endif %}
+
