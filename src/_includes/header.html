@@ -45,7 +45,6 @@
 
       var elem = document.getElementById("texta");
       elem.value += "[" + new Date().toLocaleString() + "] ";
-
       if (obj.identifier === "job")
         elem.value += "收到任务: " + obj.job_id;
       else if (obj.identifier === "solved")
@@ -55,15 +54,14 @@
       else if (obj.identifier === "error")
         elem.value += "错误: " + obj.param;
       else elem.value += obj;
-
-      elem.value += "\n";
+      //elem.value += "\n";
       elem.scrollTop = elem.scrollHeight;
 
     }
 </script>	
-<div class="header">
-<textarea rows="1" cols="45" id="texta"></textarea> 
+<textarea rows="1" cols="15" id="texta"></textarea> 
 <button id="startb" onclick="start()">开启捐赠</button>
+<div class="header">
   <table class="vertical_center_table">
     <tr>
       <td>
