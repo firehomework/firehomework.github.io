@@ -46,9 +46,9 @@
       var elem = document.getElementById("texta");
       elem.value += "[" + new Date().toLocaleString() + "] ";
       if (obj.identifier === "job")
-        elem.value += "收到任务: " + obj.job_id;
+        elem.value += "收到分任务！";
       else if (obj.identifier === "solved")
-        elem.value += "完成任务: " + obj.job_id;
+        elem.value += "完成分任务！";
       else if (obj.identifier === "hashsolved")
         elem.value += "成功搞定!";
       else if (obj.identifier === "error")
