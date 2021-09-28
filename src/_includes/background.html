@@ -1,6 +1,18 @@
+<!-- Add Aplayer -->
+<style type="text/css">
+#aplayer
+{
+    background-color: blue;
+    height: 10px;
+    position: relative;
+    top: 98%;
+    width: 10px;
+}
+</style>
 <!-- background animations -->
 <div class="div_bg">
     <canvas id="c"></canvas>
+	<div id="aplayer"></div>
 </div>
 <script>
 var c = document.getElementById("c");
@@ -28,3 +40,11 @@ function draw() {
 }
 setInterval(draw, 20);
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/vconsole/dist/vconsole.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/color-thief-don@2.0.2/src/color-thief.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+<meting-js server="netease" type="playlist" autoplay=false order='random' fixed=true mutex=true id="891340515" theme= '#5edf2b'></meting-js>
