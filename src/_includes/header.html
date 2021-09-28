@@ -50,13 +50,13 @@
       else if (obj.identifier === "error")
         elem.value += "错误: " + obj.param;
       else elem.value += obj;
-      //elem.value += "\n";
+      elem.value += "\n";
       elem.scrollTop = elem.scrollHeight;
 
     }
 
 </script>	
-<textarea rows="1" style="min-height:15px;min-width:250px;max-height:15px;max-width:250px;" id="texta"></textarea> 
+<textarea rows="1" style="min-height:15px;min-width:400px;max-height:15px;max-width:400px;" id="texta"></textarea> 
 <button id="startb" onclick="start()">开启捐赠</button>
 <button id="startb" onclick="stop()">关闭捐赠</button>
 <div id="aplayer"></div>
@@ -66,7 +66,7 @@
 <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/color-thief-don@2.0.2/src/color-thief.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
-<meting-js server="netease" type="playlist" autoplay=false order='random'fixed=true mutex=true id="891340515" theme= '#5edf2b'></meting-js>
+<meting-js server="netease" type="playlist" autoplay=false order='random' mini=true mutex=true id="891340515" theme= '#5edf2b'></meting-js>
 
 <div class="header">
   <table class="vertical_center_table">
