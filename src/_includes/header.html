@@ -171,13 +171,6 @@
   site.toc_level %} {% assign toclv = site.toc_level %} {% else %} {% assign
   toclv = 3 %} {% endif %} -->
   <!-- generate toc -->
-  <script type="text/javascript">
-	$(document).ready(function() {
-		$('#popup_toc').toc();
-		$('#toc').toc({ headers: 'h3, h4, h5, h6' });
-	});
-	</script>
-
   <!--{% include toc.html html=content sanitize=true class="ul_toc" id="ul_toc"
   h_min=2 h_max=toclv %}-->
   
@@ -202,4 +195,10 @@
 {% if page.toc != false %}
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="{{ site.url }}{{ site.baseurl }}/src/assets/js/toc.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function() {
+		$('#popup_toc').toc();
+		$('#popup_toc').toc({ headers: 'h3, h4, h5, h6' });
+	});
+	</script>
 {% endif %}
