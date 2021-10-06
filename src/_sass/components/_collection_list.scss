@@ -80,13 +80,14 @@
     margin: 0;
     overflow-x: hidden;
     @include thin_scrollbar;
-    text-align: end;
+    text-align: center;
+	word-break: break-word;
     td {
       padding: 0;
     }
     ul {
       margin: 0;
-      padding: 0px 10px 0px 26px;
+      padding: 0px 10px 0px 0px;
       text-align: left;
     }
     li {
@@ -148,7 +149,7 @@
   // left part
   .a_collection_label {
     padding: 0;
-    font-size: $font-size-h3;
+    font-size: $font-size-h4;
     line-height: 160%;
     text-transform: capitalize;
     padding: 5px 0;
