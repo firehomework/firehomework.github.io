@@ -6,9 +6,13 @@
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 -->
-      <div id="content" style="background-color:rgb(94,223,43,0.3);">
-		<div id="disqus_thread"></div>
-      </div>
+<section style="margin-top:40px;padding:1px 15px 1px 10px;background-color:rgba(94,223,43,0.7);box-shadow: 0px 0px 20px #bbbbbb;border-radius: 5px;">
+<hr>
+<p>这是一个安静的评论区。或许有些人希望它热闹一些。</p>
+<div id="disqus_thread"></div>
+<hr>
+</section>
+
 
 <script>
   /**
@@ -35,11 +39,15 @@
 //链接：https://www.jianshu.com/p/656e6101bf0f
 //来源：简书
 //著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+//松子：添加这个版本也不知道好不好用。
         new Valine({
             el: '#disqus_thread',
             appId: 'yDFxzLYnVDgup4yxRkjMCtpX-gzGzoHsz',
             appKey: 'NHch2IEM4nKl3iLhyf273Klk',
 			emojiCDN: '//i0.hdslb.com/bfs/emote/', 
+			placeholder：'有什么不懂的吗，松子很欢迎交流的(卑微)',
+			recordIP: true,
+			requiredFields:['nick']
         })
 
 
@@ -47,7 +55,7 @@
 <noscript
   >Please enable JavaScript to view the
   <a href="https://disqus.com/?ref_noscript"
-    >comments powered by Disqus.</a
+    >comments powered by Valine.</a
   ></noscript
 >
 {% endif %}
