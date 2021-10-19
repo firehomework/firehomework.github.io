@@ -1,9 +1,9 @@
 {% if page.comment == true %}
-<!-- disqus -> gitalk -->
-<script src="{{site.url}}{{site.baseurl}}/src/assets/js/md5.min.js"></script>
+<!-- disqus -> gitalk -> Leancloud-->
+<!-- <script src="{{site.url}}{{site.baseurl}}/src/assets/js/md5.min.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>-->
 <div id="disqus_thread"></div>
 <script>
   /**
@@ -15,7 +15,7 @@
     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     */
- var gitalk = new Gitalk({
+ /*var gitalk = new Gitalk({
               clientID: '{{ site.comments.gitalk_clientID }}',
               clientSecret: '{{ site.comments.gitalk_Secret }}',
               repo: '{{ site.comments.gitalk_repo }}',
@@ -25,12 +25,18 @@
               distractionFreeMode: '{{ site.comments.distractionFreeMode }}'  // Facebook-like distraction free mode
             })
 
-            gitalk.render('disqus_thread')
-
+            gitalk.render('disqus_thread')*/
 //作者：伪君子_
 //链接：https://www.jianshu.com/p/656e6101bf0f
 //来源：简书
 //著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+        new Valine({
+            el: '#disqus_thread',
+            appId: 'yDFxzLYnVDgup4yxRkjMCtpX-gzGzoHsz',
+            appKey: 'NHch2IEM4nKl3iLhyf273Klk'
+        })
+
+
 </script>
 <noscript
   >Please enable JavaScript to view the
