@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-
-{% include codeHeader.html %}
   {% include head.html %}
   <body class="page">
+    <button class="btn" data-clipboard-text="1">Copy</button>
+    <button class="btn" data-clipboard-text="2">Copy</button>
+    <button class="btn" data-clipboard-text="3">Copy</button>
     {% include background.html %}
     {% include collection_list.html %}
     <div class="container" id="ctner">
@@ -21,5 +22,17 @@
       </div>
     </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
+      <script>
+      var clipboard = new ClipboardJS('.btn');
+
+      clipboard.on('success', function (e) {
+        console.log(e);
+      });
+
+      clipboard.on('error', function (e) {
+        console.log(e);
+      });
+    </script>
   <script async src="{{site.url}}{{site.baseurl}}/src/assets/js/init-mermaid.js"></script>
 </html>
