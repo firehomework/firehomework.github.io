@@ -1,6 +1,6 @@
 
-
-<!-- disqus -> gitalk -> Leancloud {% if page.comment == true %}-->
+{% if page.comment == true %}
+<!-- disqus -> gitalk -> Leancloud -->
 <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 <!-- <script src="{{site.url}}{{site.baseurl}}/src/assets/js/md5.min.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
@@ -65,7 +65,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     */
- /*var gitalk = new Gitalk({{% endif %}
+ /*var gitalk = new Gitalk({
               clientID: '{{ site.comments.gitalk_clientID }}',
               clientSecret: '{{ site.comments.gitalk_Secret }}',
               repo: '{{ site.comments.gitalk_repo }}',
@@ -152,4 +152,4 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     >comments powered by Valine.</a
   ></noscript
 >
-
+{% endif %}
