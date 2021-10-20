@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 {% if page.content contains "code" %}
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
 <script>
 <!-- clipboard.js code -->
 // get all <code> elements
-var allCodeBlocksElements = $( "code" );
+var allCodeBlocksElements = $("code");
  
 allCodeBlocksElements.each(function(i) {
  	// add different id for each code block
@@ -40,7 +42,5 @@ allCodeBlocksElements.each(function(i) {
       </div>
     </div>
   </body>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
   <script async src="{{site.url}}{{site.baseurl}}/src/assets/js/init-mermaid.js"></script>
 </html>
