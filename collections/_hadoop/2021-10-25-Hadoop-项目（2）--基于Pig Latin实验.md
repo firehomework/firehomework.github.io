@@ -1,5 +1,5 @@
 ---
-title: 2021-10-10-Hadoop 项目（2）--基于Pig Latin实验
+title: 2021-10-25-Hadoop 项目（2）--基于Pig Latin实验
 author: "sofm"
 ---
 

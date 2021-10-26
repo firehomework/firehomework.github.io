@@ -1,3 +1,6 @@
+---
+title: 2021-10-26-Hadoop Hive作业 + 避坑
+---
 # Hadoop Hive作业 + 避坑
 
 ## 前言
