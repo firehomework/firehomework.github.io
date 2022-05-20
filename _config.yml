@@ -1,7 +1,7 @@
 # 1. Site Settings
 title               : "松子腹地-谨防松鼠"
 owner               : "Pinenut"
-url                : "https://firehomework.github.io"
+url                : "https://firehomework.xyz"
 baseurl            : ""
 permalink           : /:title/
 description         : "这是松子的学习站点。当然也会放一些神奇的东西"
@@ -12,6 +12,7 @@ bgtext              : "崩霉郁闷沮丧冷漠厌烦阴沉疲乏劳累%#￥@呜
 # 2. Your Collections
 # You can specify the order shown in Archive window. 
 # Keep it null if you want to show items in alphabetic order.
+# 修改了上面的URL来保证加载
 # 根据测试，这玩意对中文水土不服，但alias有效，用拼音代替即可
 # 肯定要学的东西：编译原理，计算机组成原理，操作系统，软件测试，大数据hadoop
 # 准备有想法的东西：Unity，汇编，力扣
