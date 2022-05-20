@@ -1,7 +1,7 @@
 # 1. Site Settings
 title               : "松子腹地-谨防松鼠"
 owner               : "Pinenut"
-url                : "https://firehomework.xyz"
+url                : "http://firehomework.xyz"
 baseurl            : ""
 permalink           : /:title/
 description         : "这是松子的学习站点。当然也会放一些神奇的东西"
@@ -98,14 +98,6 @@ defaults:
       post_list           : true       # whether show list of post by default      
       comment             : true
       footer              : true        # whether show footer by default
-comments:
-  gitalk: true
-  gitalk_clientID: '7357f33db1450d2d6a96'
-  gitalk_Secret: '6c98ab0541fb400e2dcb7aa58a96ae3fc711c962'
-  gitalk_repo: 'firehomework.github.io'
-  gitalk_owner: 'firehomework'
-  gitalk_admin: 'firehomework'
-  distractionFreeMode: true
 # 5. Social Media Accounts
 email               : "1101839859@qq.com" 
 linkedin            : 
