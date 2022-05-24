@@ -34,3 +34,4 @@ title: 松子腹地 - 谨防松鼠 - 旧博客主题
 
  剩下的，现在就先鸽了。
 
+{% include comment.html %}
