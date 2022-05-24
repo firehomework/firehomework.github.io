@@ -1,117 +1,27 @@
-# 1. Site Settings
-title               : "松子腹地-谨防松鼠"
-owner               : "Pinenut"
-url                : "http://firehomework.xyz"
-baseurl            : ""
-permalink           : /:title/
-description         : "这是松子的学习站点。当然也会放一些神奇的东西"
-markdown            : kramdown
-statement           : "博客模板原作者DeerRIDER，不过我在它的基础上正在魔改"
-#bgtext              : "ABCFGHKLMNPQRSVWXYZabcdefghijklmnopqrstuvwxyz@#$%&*+-;/[]<>~" # texts randomly displayed in background
-bgtext              : "崩霉郁闷沮丧冷漠厌烦阴沉疲乏劳累%#￥@呜啊ლ(′◉❥◉｀ლ)" # texts randomly displayed in background
-# 2. Your Collections
-# You can specify the order shown in Archive window. 
-# Keep it null if you want to show items in alphabetic order.
-# 修改了上面的URL来保证加载
-# 根据测试，这玩意对中文水土不服，但alias有效，用拼音代替即可
-# 肯定要学的东西：编译原理，计算机组成原理，操作系统，软件测试，大数据hadoop
-# 准备有想法的东西：Unity，汇编，力扣
-collection_order    : 
-  [
-    "jisuanjizuchengyuanli",
-    "bianyiyuanli",
-    "caozuoxitong",
-    "ruanjianceshi",
-    "unity",
-    "huibian",
-    "leetcode",
-    "my_notes",
-    "hadoop",
-    "tongyijianmo",
-    
-  ]
-collections:
-  bianyiyuanli:   
-    output          : true
-    permalink       : /:collection/:title/
-    sort_by         : date
-    alias           : "编译原理"
-  jisuanjizuchengyuanli:
-    output          : true
-    permalink       : /:collection/:title/
-    alias           : "计算机组成原理"
-    sort_by         : date
-    #order: # specify post order manually
-    #  - portfolio3.md
-    #  - portfolio2.md
-    #  - portfolio1.md
-  caozuoxitong:
-    output          : true
-    permalink       : /:collection/:title/
-    alias           : "操作系统"
-    sort_by         : date
-  ruanjianceshi:
-    output          : true
-    permalink       : /:collection/:title/
-    alias           : "软件测试"
-    sort_by         : date
-  hadoop:
-    output          : true
-    permalink       : /:collection/:title/
-    alias           : "HADOOP开发"
-    sort_by         : date
-#  finance:
-#    output          : true
-#    permalink       : /:collection/:title/
-  my_notes:
-    output          : true
-    permalink       : /:collection/:title/
-    # An alias should be given or the UNDERSCORE will appeared 
-    alias           : "个人随笔"
-  tongyijianmo:
-    output          : true
-    permalink       : /:collection/:title/
-    # An alias should be given or the UNDERSCORE will appeared 
-    alias           : "统一建模语言"
-    sort_by         : date
-#  posts:
-#    output          : true
+title : Elementary - Jekyll Blog Theme
+name: '松子腹地-谨防松鼠'
+description: '过得糟糕的人难以改变自己的现状，却总希望将来的人过得更好。一面是消极的自毁倾向，一面是积极的人性光辉。​'
 
-# 4. Default page settings (WILL BE overwriten by front-matters of a page)
-defaults:
-  -    
-    scope:
-      path          : ""  # an empty string here means all files in the project
-    values:
-      layout              : "post"      # which layout to use by default
-      publish             : true        # whether to show by default      
-      btn_text            : true        # whether show button text by default
-      collection_list     : true        # whether show archive button by default
-      home_btn            : true        # whether show home by default
-      maximize            : true        # whether show maximize button by default
-      encrypted_text      : false       # whether use encrytion function by default
-      toc                 : true        # whether show table of content by default
-      toc_level           : 4           # the toc depth by default
-      author              : "Pinenut" # author name by default
-      show_date           : true        # whether show date message by default
-      category            :             # category by default
-      post_list           : true       # whether show list of post by default      
-      comment             : true
-      footer              : true        # whether show footer by default
-# 5. Social Media Accounts
-email               : "1101839859@qq.com" 
-linkedin            : 
-github              : "firehomework" 
-gitlab              : 
-website             : "https://firehomework.ys168.com"
-twitter             : "Pinenut6666"
-facebook            : "没有"
-instagram           : 
-youtube             : "没有"
-steam               : "1101839859"
-weibo               :
-      
-# 6. Where things are
+markdown: kramdown
+highlighter: rouge
+javascript_enabled: true
+
+featured_posts_title: 我的其他页面
+featured_posts:
+  - url: 'https://www.firehomework.ys168.com'
+    title: '我的网盘'
+
+collections:
+  news:
+    title: 更新日志(施工中)
+    default_open: false
+    output: true
+  posts:
+    title: 所有文章(点击标签分类筛选)
+    default_open: true
+    output: true
+
+# set collections and plugins dir, to make me migrate my blog easily.
 source              : .
 destination         : ./_site
 collections_dir     : collections
@@ -122,16 +32,17 @@ includes_dir        : src/_includes
 sass:
   sass_dir          : src/_sass
 
-# 7. Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  
-gems: [jekyll-mermaid]
+defaults:
+  - scope:
+      type: posts
+    values:
+      title: Essays
+      permalink: /post/:title
+  - scope:
+      type: news
+    values:
+      title: News
+      permalink: /news/:title
 
-# 8. Others
-# Cross-Origin Resource Sharing header
-webrick:
-  headers:
-    Access-Control-Allow-Origin: "*"
+plugins:
+  - jekyll-sitemap

@@ -1,35 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+{% include head.html %}
+<body>
+<div class="container">
+  {% include nav.html %}
+  <hr class="stylish"/>
+  {{ content }}
+</div>
+<footer>
+  <hr class="stylish"/>
+  {% include nav.html %}
+  <div>
+    原主题: <a href="https://github.com/abhn/Elementary">Elementary</a>
+    <br/>
+    <a>{{ site.name }}</a> &copy; {{ site.time | date: '%Y' }}
+  </div>
+</footer>
+{% if site.javascript_enabled %}
+  <script src="/assets/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vconsole/dist/vconsole.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/color-thief-don@2.0.2/src/color-thief.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+<meting-js server="netease" type="playlist" autoplay=false order='random' fixed=true mutex=true id="891340515" theme= '#5edf2b'></meting-js>
 
-  {% include head.html %}
-  <body class="page">
-    {% include background.html %}
-    {% include collection_list.html %}
-    <div class="container" id="ctner">
-       {% include header.html %}
-      <div class="div_article" id="div_atcl">
-        <article
-          id="main_atcl"
-          itemscope
-          itemtype="http://schema.org/BlogPosting"
-        >
-          {{content}} {% include post_list.html %} {% include comment.html %}
-        </article>
-        {% if page.footer != false %} {% include footer.html %} {% endif %}
-      </div>
-    </div>
-  </body>
-  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
-      <script>
-      var clipboard = new ClipboardJS('.btn');
-
-      clipboard.on('success', function (e) {
-        console.log(e);
-      });
-
-      clipboard.on('error', function (e) {
-        console.log(e);
-      });
-    </script>
-  <script async src="{{site.url}}{{site.baseurl}}/src/assets/js/init-mermaid.js"></script>
+{% endif %}
+</body>
 </html>

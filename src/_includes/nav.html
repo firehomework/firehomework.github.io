@@ -1,0 +1,89 @@
+<nav class="top-nav">
+  <a class="nav-item" href='/'>主页</a>
+  | <a class="nav-item" href='/tags'>标签</a>
+  | <a class="nav-item" href='/about'>关于</a>
+  | <a class="nav-item" href="/feed.xml">RSS订阅</a>
+  {% if site.javascript_enabled %}| <a class="nav-item dark-light-switch" href="#"></a>{% endif %}
+
+</nav>
+  {% if page.layout == 'post' %}
+   <button class="nav-item" id="toc-switch" onclick="toggle_toc()">目录</button>
+  <div class="div_toc toc" id="popup_toc">
+  <br>
+  <div id="tocs">
+  </div>
+</div></a>
+{% endif %}
+
+
+<style type="text/css">
+#toc-switch{
+top: 0.5px;
+right: -0.5px; 
+position: fixed;
+}
+.div_toc {
+  color: #fff;
+  border-radius: 10px;
+  position: fixed;
+  bottom: auto;
+  top: $toc-position + 0.6px;
+  right: -0.5px;  
+  z-index: 2;
+  max-width: 50%;
+  max-height: 65%;
+  width: auto;
+  overflow-x: hidden;
+  visibility: hidden;
+  text-align: left;
+  background-color:rgba(0,0,0,0.85);
+  padding: 0 20px;
+
+  ul {
+    color: #fff;
+    padding: 0 4px 0 18px;
+    margin: 5px 4px;
+    li a {
+      font-size: 0.25rem;
+	  max-width: 50%;
+	  max-height: 65%;
+      text-decoration: none;
+    }
+  }
+}  
+#tocs{
+	
+}
+#tocs li {
+  color: #fff;
+  font-size:1rem;
+}
+#tocs a {
+  color: #fff;
+  font-size:1rem;
+}
+
+</style>
+
+<!--只有是博客的时候才加载目录-->
+{% if page.layout == 'post' %}
+<script src="https://www.unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/src/assets/js/toc.js"></script>
+  <script type="text/javascript">
+  function toggle_toc() {
+	if(document.getElementById("popup_toc").style.visibility == "visible")
+	{
+	document.getElementById("popup_toc").style.visibility = "hidden";
+	
+	}
+	else
+	{
+	document.getElementById("popup_toc").style.visibility = "visible";
+	}
+}
+	$(document).ready(function() {
+		$('#tocs').toc();
+	});
+	</script>
+
+{% endif %}

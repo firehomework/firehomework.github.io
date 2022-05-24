@@ -1,249 +1,92 @@
+# Unmaintained - Blog moved to Wordpress
+I've moved my blog to wordpress and ported this theme to Wordpress - [https://github.com/abhn/Elementary-Wordpress](https://github.com/abhn/Elementary-Wordpress).
 
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+Due to a crunch of time, updates here may or may not happen. Please check the Wordpress theme for updates.
 
-<!-- LOGO -->
-<br />
-
-<p align="center">
-  <a href="https://github.com/akiritsu/pRoJEct-VeXEd">
-    <img src="src/assets/img/favicon.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">pRoJEct-VeXEd</h3>
-    <h5 align="center">v 2.4</h5>
-    <br />
-  <p align="center">
-    pRoJEct-NeGYa is a hacker-like, highly-customizable theme for note-keeping, personal-website or CV.
-    <br />
-    <br />
-    <a href="https://akiritsu.github.io/pRoJEct-VeXEd/">View Demo</a>
-    ·
-    <a href="https://github.com/akiritsu/pRoJEct-VeXEd/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/akiritsu/pRoJEct-VeXEd/issues">Request Feature</a>
-  </p>
-
-</p>
-
-<!-- TABLE OF CONTENTS -->
-## Table of Contents
-
-- [Table of Contents](#table-of-contents)
-- [About The Project](#about-the-project)
-  - [Features](#features)
-  - [Builtwith](#builtwith)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Personalize and Customize](#personalize-and-customize)
-    - [_config.yml](#_configyml)
-    - [Collections](#collections)
-    - [Writing](#writing)
-    - [Comment](#comment)
-    - [Test locally](#test-locally)
-    - [Front Matter](#front-matter)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+Relevant blog article: [Life Goes Full Circle – Blog Back To WordPress](https://www.nagekar.com/2021/01/life-goes-full-circle-blog-back-to-wordpress.html)
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+# Elementary
+This is my personal blog's Jekyll template that I've been optimizing for performance, accessibility, usability, readability and simplicity in general. 
 
-![homepage](src/assets/img/Screenshot-2.png)
+I personally do not approve of personal blogs bloated with hundreds of kilobytes of trackers and analytics code, and hence, this is an attempt at creating something that I'd be comfortable with using on my website.
 
-This jekyll theme is a content-oriented blog, cv or learning notes, aimed at providing a convinient note-keeping tool. You can keep and review your notes or articles in different collections without any functional recode.
+### Performance
+![](./tmp/perf-2.jpg)
+
+Images from my website (clockwise from top left)
+
+- Perfect **100 Google Page Speed score** on both mobile and desktop
+- **Kindle's experimental browser** running the theme
+- Median load time (From Cloudflare) is **less than a second**
+- **100% cached** by Cloudflare CDN
+
+### Dark mode
+![](./tmp/dark-mode.gif)
+
+Note: Dark mode requires JavaScript
+
+### Scroll progress
+![](./tmp/scroll-progress.gif)
+
+Note: Scroll progress requires JavaScript
+
+### Demo
+<a href="https://elementary-jekyll.github.io/">https://elementary-jekyll.github.io/</a>
 
 ### Features
+- Lightweight, <10KB CSS, <3KB (optional) JavaScript + 15KB Open Sans font file + your content
+- Highly accessible with semantic HTML
+- Structured data ([schema.org](https://schema.org)) pre-added for blog posts
+- Dark mode (requires JavaScript for toggling class and saving user preference in cookies)
+- Reading progress slider on top (requires JavaScript)
+- JavaScript is optional (turn it off in `_config.yml`)
+- No request made to any third party
+- Any much more...
 
-* Highly customizable
-* Formula insertion
-* Code test online
-* Easy-to-use cheatsheet
-* Hacker-like theme
-* Code highlight
-* Text Decryption
-* Convinient code exhibition and review
-* Table of content
-* Atom Feeds
-* SEO
-
-### Builtwith
-
-* Bundler
-* Jekyll
-* Mathpix
-* Font Awesome
-* Sjcl
-* Disqus
-* Mermaid
-
-## Getting Started
-
-### Prerequisites
-* rubygems
-
-The installation of gem is depend on your operating system. Alternatively, you can download Gem through browser: [Ruby](https://www.ruby-lang.org/en/downloads/), and install rubygems manually.
-
-```bash
-# macOS
-
-brew update
-brew install ruby
-
-# Ubuntu
-sudo apt-get install ruby
-
-# Arch
-sudo pacman -S ruby
-
+### Installation (Prerequisite: A working Jekyll site)
+- If you don't have a Jekyll site, read up how to create one here: [https://jekyllrb.com/docs/](https://jekyllrb.com/docs/)
+- Add Elementary repository as a submodule to your Jekyll blog by running the following command.
 ```
-
-* bundler
-
-```bash
-gem install bundler
+git submodule add git@github.com:abhn/Elementary.git elementary
 ```
-* jekyll
-```bash
-bundler install jekyll
+- Tell Jekyll it has to use Elementary as theme by adding the following to your `_config.yml` (in case you're wondering where, just add it to the bottom on a new line). 
 ```
-
-* jekyll plugins
-
-```bash
-gem install jekyll-sitemap jekyll-feed jekyll-seo-tag jekyll-mermaid
+theme: elementary
 ```
-
-### Installation
-
-1. Fork this project on [github](https://github.com/akiritsu/pRoJEct-VeXEd), change project settings, and clone your own repository into your local disk.
-
-```bash
-git clone https://github.com/{{YOUR_USERNAME}}/{{YOUR_REPOSITORY}}.git
+- Add the following to your `Gemfile`
 ```
-
-2. Change directory.
-
-```bash
-cd {{YOUR_REPOSITORY_DIR}}
+source 'https://rubygems.org'
+gem 'elementary', path: 'elementary'
 ```
-
-### Personalize and Customize
-
-#### _config.yml
-
-Edit **_config.yml** with your own website information.
-
-#### Collections
-
-All your articles could be stored in this folder. You could create a new collection by creating a subfolder begin with a slash, and register the basic information in **_config.yml**. Here is an example:
-
-```yaml
-# Collections
-collections:
-  notes:
-    output          : true
-    permalink       : /:collection/:title/
-    sort_by         : date
-  portfolio:
-    output          : true
-    permalink       : /:collection/:title/
-    order: # specify post order manually
-      - portfolio3.md
-      - portfolio2.md
-      - portfolio1.md
-  album:
-    output          : true
-    permalink       : /:collection/:title/
-    sort_by         : date
+- Run `bundle install` command in your project directory and make sure there are no errors
+- Add `./elementary` to `exclude` section of `_config.yml` so that the theme's files aren't compiled into the final site by adding the following to your `_config.yml` (if `exclude` key exists, just add a new item to it)
 ```
-
-All your articles would be shown by clicking **Archive** button in the header of your website.
-
-#### Writing
-
-Delete all sample collections under **./collections/**, and have fun in writing!
-
-#### Comment
-
-Create your own account in [Disqus.com](https://disqus.com/), and change the attribute "disqus_username" in **_config.yml**.
-
-#### Test locally
-
-Run command below, and access "127.0.0.1:4000" to test your website locally.
-
-```bash
-bundle exec jekyll serve
+exclude:
+  - ./elementary
 ```
+- Run command `bundle exec jekyll serve` to run local server (open browser to [http://localhost:4000](http://localhost:4000) to view the site).
+- Run command `bundle exec jekyll build` to output a production build to the `_site` directory.
 
-#### Front Matter
+### Customization
+- You're free to make any edits to the theme's files in the submodule. You can also `git pull origin master` from the submodule directory to update the theme in case I push updates, but you don't have to.
+- In `_config.yml`, you can add new collections (groups of new content, so blog posts, news, pictures could all be their own collections with separate listing on index page)
 
-You can add many front matter to customize a page. For more information, visit official document: [https://jekyllrb.com/] (https://jekyllrb.com/docs/front-matter/)
+### Credits
+- Eric S Raymond (http://www.catb.org/~esr/hacker-emblem/glider.png) for the favicon
 
-```yaml
-layout: post # page layout, must be one of layouts under src/_layouts
-title: "Sample" # string
-author: "your_name" # string
-post_list: "cate" # whether to show post list under collections/_post, one of false, "cate", "date"
-collection_list: true # true or false
-toc: true # table of content, true or false
-show_date: true # whether to show date, true or false
-home_btn: true # whether to show home button, true or false
-btn_text: true # whether to show button text, true or false
-footer: true # whether to show footer, true or false
-maximize: true # whether to show maximize button, true or false
-encrypted_text: true # whether to enable encrypted text, true or false
-publish: true # if you wish keep this page invisible, put false here
-toc_level: 4 # the depth of toc, one of 1, 2, 3, 4, 5, 6
-comment: ture # whether to show comment area
-category: "sample" # string
-date: 2019-5-25 # YYYY-MM-DD
-excerpt: "This is excerpt." # string
-abstract: "This is abstract. Abstract is blank by default." # string
-```
+### License
+GNU GENERAL PUBLIC LICENSE Version 3
 
-## Roadmap
+### Going v1.0
+When I started with the [original project](https://github.com/abhn/Elementary/releases/tag/v0.1) around 2 years ago, my goal was to get rid of all that unnecessary code and progressively add only the most essential bits. 
 
-1. On-browser code execution teminal.
-2. Code review mode.
-3. Slide mode.
-4. Rapid cheatsheet access.
+I feel like the theme is in good enough shape right now that I can call it a v1.0
 
+-----
 
-<!-- CONTRIBUTING -->
-## Contributing
+### Original inspiration
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+I recently read in a blog post that a personal blog has to be fast and lean. There's no reason for a personal blog to be bloated and take 2 seconds to load. That was when I reviewed my own blog code and started analyzing. I discovered that I was loading jQuery just for another jQuery plugin which just helped the images and videos to be mobile responsive. That was some 40KB of overhead, 2 additional requests which could have been prevented with just a `max-width: 100%` attribute to the culprit elements. Similarly, there was Disqus which loaded tonnes of scripts along with its own Google Analytics script. 
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-<!-- CONTACT -->
-## Contact
-
-DeerRIDER - [Email](mailto://deerrider666@outlook.com)
-
-Project Link: [https://github.com/akiritsu/pRoJEct-VeXEd](https://github.com/akiritsu/pRoJEct-VeXEd)
-
-[forks-shield]: https://img.shields.io/github/forks/akiritsu/pRoJEct-VeXEd.svg?style=flat-square
-[forks-url]: https://github.com/akiritsu/pRoJEct-VeXEd/network/members
-[stars-shield]: https://img.shields.io/github/stars/akiritsu/pRoJEct-VeXEd.svg?style=flat-square
-[stars-url]: https://https://github.com/akiritsu/pRoJEct-VeXEd/stargazers
-[issues-shield]: https://img.shields.io/github/issues/akiritsu/pRoJEct-VeXEd.svg?style=flat-square
-[issues-url]: https://https://github.com/akiritsu/pRoJEct-VeXEd/issues
-[license-shield]: https://img.shields.io/github/license/akiritsu/pRoJEct-VeXEd.svg?style=flat-square
-[license-url]: https://https://github.com/akiritsu/pRoJEct-VeXEd/blob/master/LICENSE.txt
+I went on stripping weight from the code, and was left with something what you see here. Few extra CSS tweaks and Tadaa!

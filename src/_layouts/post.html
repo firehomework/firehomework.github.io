@@ -2,8 +2,95 @@
 layout: default
 ---
 
-<h1 id="{{page.title}}">{{ page.title }}</h1>
-{% include post_info.html %}
-<br />
-{{ content }}
-<script src="{{ site.url }}{{ site.baseurl }}/src/assets/js/copyCode.js"></script>
+<div class="_progress-wrapper">
+  <div id="_progress"></div>
+</div>
+
+<header>
+  <h1>{{ page.title }}</h1>
+  <header class="title-tags">
+  
+  {% if page.author %}
+  <span>
+    <i class="fa fa-user-secret"></i>
+    本文由作者：{{ page.author }} 编写。
+  </span>
+  {% endif %}
+    <time datetime="{{ page.date | date_to_xmlschema }}">写作日期：{{ page.date | date: '%Y %B %-d ： %A.' }}</time>
+    <div class="tags-container">
+      该文章含标签： <span>
+          {% for tag in page.tags %}
+            <a class="tags" href="/tags#{{ tag }}">{{ tag }}</a>
+          {% endfor %}
+        </span>
+      &nbsp;
+    </div>
+	<ul>
+  <li>
+    当前页面浏览量:
+    <span class="waline-pageview-count" />
+  </li>
+  <li>
+    主页浏览量:
+    <span class="waline-pageview-count" data-path="/" />
+  </li>
+</ul>
+  </header>
+</header>
+
+<hr class="stylish" />
+
+<main role="main">
+
+  <article>
+
+    <section class="content">
+      {{content}}
+    </section>
+	<hr class="stylish"/>
+	{% include comment.html %}
+    <hr class="stylish"/>
+    <hr class="stylish"/>
+
+    {% include featured.html %}
+
+    <hr class="stylish"/>
+
+    <section class="pagination">
+      {% if page.previous.url %}
+      <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+      {% endif %}
+      {% if page.next.url %}
+      <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+      {% endif %}
+    </section>
+
+  </article>
+
+</main>
+<script>
+// assets/js/post.js
+var codeBlocks = document.querySelectorAll('pre.highlight');
+
+codeBlocks.forEach(function (codeBlock) {
+  var copyButton = document.createElement('button');
+  copyButton.className = 'copy';
+  copyButton.type = 'button';
+  copyButton.ariaLabel = 'Copy code to clipboard';
+  copyButton.innerText = '一键省事复制';
+
+  codeBlock.append(copyButton);
+
+  copyButton.addEventListener('click', function () {
+    var code = codeBlock.querySelector('code').innerText.trim();
+    window.navigator.clipboard.writeText(code);
+
+    copyButton.innerText = '复制成功';
+    var fourSeconds = 4000;
+
+    setTimeout(function () {
+      copyButton.innerText = '一键省事复制';
+    }, fourSeconds);
+  });
+});
+</script>
