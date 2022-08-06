@@ -1,16 +1,7 @@
-# Unmaintained - Blog moved to Wordpress
-I've moved my blog to wordpress and ported this theme to Wordpress - [https://github.com/abhn/Elementary-Wordpress](https://github.com/abhn/Elementary-Wordpress).
-
-Due to a crunch of time, updates here may or may not happen. Please check the Wordpress theme for updates.
-
-Relevant blog article: [Life Goes Full Circle – Blog Back To WordPress](https://www.nagekar.com/2021/01/life-goes-full-circle-blog-back-to-wordpress.html)
-
-
 # Elementary
-This is my personal blog's Jekyll template that I've been optimizing for performance, accessibility, usability, readability and simplicity in general. 
-
-I personally do not approve of personal blogs bloated with hundreds of kilobytes of trackers and analytics code, and hence, this is an attempt at creating something that I'd be comfortable with using on my website.
-
+这曾经是一位大佬制作的极简风格的博客主题。我所做的几乎是它的反面——把它整复杂了。
+嗯，就是这么离谱。
+如果大佬发现我的网页，怕不是会被活活气死——他辛辛苦苦做好的fast和clean被我变成了mess.哈哈哈哈哈哈。
 ### Performance
 ![](./tmp/perf-2.jpg)
 
