@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "d85c5186952f4dfc",
+    "type": "split",
+    "children": [
+      {
+        "id": "55b716fe4ac9217b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "collections/_notes/每日学习笔记-2022-08-06.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "150bd1323480a135",
+    "type": "split",
+    "children": [
+      {
+        "id": "469cf1c19df7396e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5b8daebea1140c17",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "72b88a84b82f2cd2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5510426886a65d45",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9bd479c77eab1d6f",
+    "type": "split",
+    "children": [
+      {
+        "id": "32501f0dc57a7d02",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "acc6f0d7aa520ae3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "collections/_notes/每日学习笔记-2022-08-06.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1bf08c53047d6a8b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "collections/_notes/每日学习笔记-2022-08-06.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "41adf026af4d5ecd",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "71725f94bc1a7080",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "collections/_notes/每日学习笔记-2022-08-06.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "55b716fe4ac9217b",
+  "lastOpenFiles": [
+    "templates/generic_md_template.md.md",
+    "collections/_notes/每日学习笔记-2022-08-06.md",
+    "collections/_news/2022-05-24-更新日志.md",
+    "2022-08-06.md",
+    "collections/_evolve/2022-08-05-Evolve联机教程.md",
+    "about.md",
+    "README.md",
+    "Pasted image 20220806150452.png",
+    "collections/_posts/2021-09-14-3.3边界值分析法.md",
+    "collections/_posts/2020-01-10-sample-post.md"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "promptDelete": false,
+  "strictLineBreaks": true,
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "src/assets/img",
+  "newLinkFormat": "relative",
+  "showUnsupportedFiles": false
+}
