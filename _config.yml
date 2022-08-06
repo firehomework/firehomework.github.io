@@ -14,7 +14,7 @@ featured_posts:
 collections:
   news:
     title: 更新日志(施工中)
-    default_open: false
+    default_open: true
     output: true
   posts:
     title: 所有文章(点击标签分类筛选)
@@ -22,6 +22,10 @@ collections:
     output: true
   evolve:
     title: 进化专题(NEW!)
+    default_open: true
+    output: true
+  notes:
+    title: 个人学习随记
     default_open: false
     output: true
 
@@ -52,6 +56,11 @@ defaults:
     values:
       title: Evolve
       permalink: /evolve/:title
+  - scope:
+      type: notes
+    values:
+      title: Notes
+      permalink: /notes/:title
 
 plugins:
   - jekyll-sitemap
