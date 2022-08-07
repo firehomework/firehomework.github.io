@@ -1,0 +1,15 @@
+{% if post %}
+<!--The Jekyll filter `number_of_words` doesn't parse Chinese correctly, use a workaround
+// figured in https://github.com/jekyll/jekyll/issues/1921 -->
+{% assign words = post.content | strip_html | strip_newlines | split: "" | size %}
+{% else %}
+{% assign words = page.content | strip_html | strip_newlines | split: "" | size %}
+{% endif %}
+<span class="reading-time" title="Estimated read time">
+    <i class="fa fa-clock-o"></i>
+    {% if words <= 400 %}
+        阅读预计需要1分钟~
+    {% else %}
+        阅读预计需要{{ words | divided_by:400 }} 分钟~
+    {% endif %}
+</span>

@@ -10,6 +10,10 @@ layout: default
   <h1>{{ page.title }}</h1>
   <header class="title-tags">
   
+  <div class="label-card">
+     {% include reading_time.html %}
+  </div> 
+  
   {% if page.author %}
   <span>
     <i class="fa fa-user-secret"></i>
