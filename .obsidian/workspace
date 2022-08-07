@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "collections/_evolve/2022-08-05-Evolve联机教程.md",
+            "file": "collections/_shujujiegou/栈的基本概念.md",
             "mode": "source",
             "source": false
           }
@@ -61,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 463.5
   },
   "right": {
     "id": "9bd479c77eab1d6f",
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "collections/_evolve/2022-08-05-Evolve联机教程.md",
+                "file": "collections/_shujujiegou/栈的基本概念.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "collections/_evolve/2022-08-05-Evolve联机教程.md",
+                "file": "collections/_shujujiegou/栈的基本概念.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "collections/_evolve/2022-08-05-Evolve联机教程.md"
+                "file": "collections/_shujujiegou/栈的基本概念.md"
               }
             }
           }
@@ -128,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "55b716fe4ac9217b",
+  "active": "5b8daebea1140c17",
   "lastOpenFiles": [
-    "Pasted image 20220806150452.png.md",
-    "collections/_evolve/2022-08-05-Evolve联机教程.md",
-    "collections/_notes/每日学习笔记-2022-08-06.md",
-    "templates/generic_md_template.md.md",
-    "collections/_news/2022-05-24-更新日志.md",
-    "2022-08-06.md",
-    "about.md",
-    "README.md",
-    "Pasted image 20220806150452.png",
-    "collections/_posts/2021-09-14-3.3边界值分析法.md"
+    "collections/_posts/2021-09-14-模型和UML的组成.md",
+    "collections/_posts/2022-05-03-深岩银河-局域网联机.md",
+    "collections/_posts/2022-04-26-存储器的结构.md",
+    "collections/_posts/2022-04-23-02.数据的表示和运算.md",
+    "collections/_posts/2022-04-24-02-计算机组成原理-有符号数.md",
+    "collections/_posts/2022-05-04-数据库实验3-证书.md",
+    "collections/_posts/image-20210916111348247.png",
+    "collections/_posts/2022-05-09-数据库实验2.md",
+    "collections/_posts/2022-05-09-数据库实验1.md",
+    "collections/_posts/2022-05-04-数据库实验5-跨站请求伪造攻击实验.md"
   ]
 }
