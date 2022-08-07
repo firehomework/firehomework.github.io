@@ -6,7 +6,7 @@
 {% assign words = page.content | strip_html | strip_newlines | split: "" | size %}
 {% endif %}
 <span class="reading-time" title="Estimated read time">
-    <i class="fa fa-clock-o"></i>
+    <img height="16" width="16" src="data:image/svg+xml;base64,PHN2ZyBpZD0iaS1jbG9jayIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Y29sb3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIj4KICAgIDxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjE0IiAvPgogICAgPHBhdGggZD0iTTE2IDggTDE2IDE2IDIwIDIwIiAvPgo8L3N2Zz4=" />
     {% if words <= 400 %}
         阅读预计需要1分钟~
     {% else %}
