@@ -16,6 +16,16 @@
   <link rel="stylesheet" href="/assets/main.css"/>
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml" />
   <title>{% if page.title == "Home" %}{{ site.title }}{% else %}{{ page.title }} &middot; {{ site.title }}{% endif %}</title>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?4ec0b5305c152eb7b977343aa95ad42d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
   {% if page.layout == 'post' %}
     <script type="application/ld+json">
       {
