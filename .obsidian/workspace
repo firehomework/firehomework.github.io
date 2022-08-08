@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "collections/_shujujiegou/栈的基本概念.md",
+            "file": "templates/generic_md_template.md.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "collections/_shujujiegou/栈的基本概念.md",
+                "file": "templates/generic_md_template.md.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "collections/_shujujiegou/栈的基本概念.md",
+                "file": "templates/generic_md_template.md.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "collections/_shujujiegou/栈的基本概念.md"
+                "file": "templates/generic_md_template.md.md"
               }
             }
           }
@@ -128,8 +128,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5b8daebea1140c17",
+  "active": "55b716fe4ac9217b",
   "lastOpenFiles": [
+    "collections/_shujujiegou/栈的基本概念.md",
     "collections/_posts/2021-09-14-模型和UML的组成.md",
     "collections/_posts/2022-05-03-深岩银河-局域网联机.md",
     "collections/_posts/2022-04-26-存储器的结构.md",
@@ -138,7 +139,6 @@
     "collections/_posts/2022-05-04-数据库实验3-证书.md",
     "collections/_posts/image-20210916111348247.png",
     "collections/_posts/2022-05-09-数据库实验2.md",
-    "collections/_posts/2022-05-09-数据库实验1.md",
-    "collections/_posts/2022-05-04-数据库实验5-跨站请求伪造攻击实验.md"
+    "collections/_posts/2022-05-09-数据库实验1.md"
   ]
 }
