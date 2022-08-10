@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "55b716fe4ac9217b",
+        "id": "c7dad3d7e8366bc8",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "collections/_evolve/2022-08-05-Evolve联机教程.md",
+            "file": "about.md",
             "mode": "source",
             "source": false
           }
@@ -61,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 463.5
+    "width": 282
   },
   "right": {
     "id": "9bd479c77eab1d6f",
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "collections/_evolve/2022-08-05-Evolve联机教程.md",
+                "file": "about.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "collections/_evolve/2022-08-05-Evolve联机教程.md",
+                "file": "about.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "collections/_evolve/2022-08-05-Evolve联机教程.md"
+                "file": "about.md"
               }
             }
           }
@@ -125,19 +125,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 100
   },
-  "active": "55b716fe4ac9217b",
+  "active": "c7dad3d7e8366bc8",
   "lastOpenFiles": [
-    "collections/_evolve/2022-08-08-进化游戏技巧.md",
+    "Pasted image 20220806150452.png.md",
+    "collections/_bianyiyuanli/2021-09-16-逆波兰式的算法.md",
+    "collections/_shujujiegou/队列.md",
     "collections/_evolve/2022-08-05-Evolve联机教程.md",
+    "collections/_evolve/2022-08-08-进化游戏技巧.md",
     "collections/_posts/2021-10-25-Hadoop-项目（2）--基于Pig Latin实验.md",
     "collections/_notes/每日学习笔记-2022-08-08.md",
     "collections/_notes/每日学习笔记-2022-08-06.md",
     "collections/_notes/每日学习笔记-2022-08-07.md",
-    "collections/_shujujiegou/栈的基本概念.md",
-    "templates/generic_md_template.md.md",
-    "collections/_posts/2021-09-14-模型和UML的组成.md",
-    "collections/_posts/2022-05-03-深岩银河-局域网联机.md"
+    "collections/_shujujiegou/栈的基本概念.md"
   ]
 }
