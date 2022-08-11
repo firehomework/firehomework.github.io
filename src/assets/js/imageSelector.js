@@ -1,4 +1,4 @@
-const init = (elementCSSSelector) => {
+const IMGinit = (elementCSSSelector) => {
   const shadow_style = {
     position: "fixed",
     top: 0,
