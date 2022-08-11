@@ -1,0 +1,12 @@
+diff a/src/_layouts/post.html b/src/_layouts/post.html	(rejected hunks)
+@@ -75,9 +75,7 @@
+ <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+ <script id="MathJax-script" async src="https://gcore.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+ <script> 
+-window.addEventListener('load', function() {
+-  baguetteBox.run('.content');
+-});
++init(".content")
+ MathJax = {
+   tex: {
+     inlineMath: [['$', '$']],
