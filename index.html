@@ -15,6 +15,8 @@ cover: false
 </header>
 
 <hr class="stylish"/>
+<h1>进化1-游玩情况</h1>
+<div id="evolve"><input/></div>
 
 <main class="home-main">
   {% for collection in site.collections %}
@@ -36,11 +38,25 @@ cover: false
         </div>
       </details>
     </section>
+	
     {% endif %}
   {% endfor %}
 </main>
 
+<script src="{{ site.url }}{{ site.baseurl }}/src/assets/js/evolve.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/src/assets/js/echarts.js"></script>
+ <link rel="stylesheet"  href="{{ site.url }}{{ site.baseurl }}/src/assets/js/evolve.css" />
 <script src="https://unpkg.com/@waline/client/dist/pageview.js"></script>
+        <script>
+            initTB("app",{
+                style:{ //不设置的话就别写这个style属性
+                    width:"100%",   //设置宽度
+                    height: "100%" //这个属性没啥用
+                },
+                sourceHref: "http://112.126.67.230:18080/", //接口
+                listenTimeOut: 1 //以秒为单位的更新
+            });
+        </script>
 <script>
   Waline.pageviewCount({
     serverURL: 'https://waline.firehomework.xyz',

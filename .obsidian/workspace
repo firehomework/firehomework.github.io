@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "collections/_evolve/2022-08-12-进化1猎杀模式基础技巧.md",
+            "file": "about.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "collections/_evolve/2022-08-12-进化1猎杀模式基础技巧.md",
+                "file": "about.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "collections/_evolve/2022-08-12-进化1猎杀模式基础技巧.md",
+                "file": "about.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "collections/_evolve/2022-08-12-进化1猎杀模式基础技巧.md"
+                "file": "about.md"
               }
             }
           }
@@ -129,13 +129,13 @@
   },
   "active": "c7dad3d7e8366bc8",
   "lastOpenFiles": [
-    "collections/_evolve/2022-08-08-进化游戏技巧.md",
+    "collections/_evolve/2022-08-05-Evolve联机教程.md",
     "collections/_evolve/2022-08-12-进化1猎杀模式基础技巧.md",
+    "collections/_evolve/2022-08-08-进化游戏技巧.md",
     "about.md",
     "Pasted image 20220806150452.png.md",
     "collections/_bianyiyuanli/2021-09-16-逆波兰式的算法.md",
     "collections/_shujujiegou/队列.md",
-    "collections/_evolve/2022-08-05-Evolve联机教程.md",
     "collections/_posts/2021-10-25-Hadoop-项目（2）--基于Pig Latin实验.md",
     "collections/_notes/每日学习笔记-2022-08-08.md",
     "collections/_notes/每日学习笔记-2022-08-06.md"

@@ -1,0 +1,19 @@
+.my-tr {
+    min-width: 120px;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.my-tr>*{
+    margin-top: 10px;
+}
+.my-tr>span{
+    font-weight: 400;
+    font-size: 20px;
+}
+.my-tr> p{
+    font-weight: 100;
+    font-size: 1px;
+}
