@@ -16,7 +16,7 @@ cover: false
 
 <hr class="stylish"/>
 <h1>进化1-游玩情况</h1>
-<div id="evolve"><input/></div>
+<div id="evolve"></div>
 
 <main class="home-main">
   {% for collection in site.collections %}
@@ -48,7 +48,7 @@ cover: false
  <link rel="stylesheet"  href="{{ site.url }}{{ site.baseurl }}/src/assets/js/evolve.css" />
 <script src="https://unpkg.com/@waline/client/dist/pageview.js"></script>
         <script>
-            initTB("app",{
+            initTB("evolve",{
                 style:{ //不设置的话就别写这个style属性
                     width:"100%",   //设置宽度
                     height: "100%" //这个属性没啥用
