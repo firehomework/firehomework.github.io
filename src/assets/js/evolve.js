@@ -231,10 +231,11 @@ function ReFreshData(chart, chart_data,options,proxy,myOption) {
             proxy.playerList=data.playerList.join(",") + (data.playerNum > 3 ?  "..." : "" )
             if(proxy.playerList==='')proxy.playerList='暂时无人'
             // data.chartData.forEach((v,i,a)=>{
-            //   a[i][0]=v[0].replace('/','-')
-            //   a[i][0]=v[0].replace('/','-')
-            //   a[i][0]=v[0].replace('/',' ')
+            //   a[i][0]=v[0].replace(' ','-')
             // })
+            data.chartData.sort((a,b)=>{
+              return new Date(a[0]).getTime() - new Date(b[0]).getTime()
+            })
             chart_data.push(...data.chartData)
             // console.log(chart_data)
             chart.setOption(options)
