@@ -106,7 +106,7 @@ function initTB(elementId,myOption) {
         title: {
           left: 'center',
           top: 'bottom',
-          text: '三日内在线人数'
+          text: '进化1(LegacyCrack) - 三日内在线人数'
         },
         tooltip: {
           trigger: 'axis',
