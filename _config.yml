@@ -28,6 +28,11 @@ collections:
     title: 个人学习随记
     default_open: false
     output: true
+  xinglugu:
+    title: 星露谷联机合集
+    default_open: true
+    output: true
+
 
 # set collections and plugins dir, to make me migrate my blog easily.
 source              : .
@@ -61,6 +66,11 @@ defaults:
     values:
       title: Notes
       permalink: /notes/:title
+  - scope:
+      type: xinglugu
+    values:
+      title: XingLuGu
+      permalink: /xinglugu/:title
 
 plugins:
   - jekyll-sitemap

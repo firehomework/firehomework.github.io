@@ -17,7 +17,7 @@ cover: false
 <hr class="stylish"/>
 
 <main class="home-main">
-<div id="evolve"></div>
+
   {% for collection in site.collections %}
     {% if collection.docs.size > 0 %}
     <section id="posts">
@@ -42,20 +42,9 @@ cover: false
   {% endfor %}
 </main>
 
-<script src="{{ site.url }}{{ site.baseurl }}/src/assets/js/evolve.js"></script>
-<script src="{{ site.url }}{{ site.baseurl }}/src/assets/js/echarts.js"></script>
- <link rel="stylesheet"  href="{{ site.url }}{{ site.baseurl }}/src/assets/js/evolve.css" />
+
 <script src="https://unpkg.com/@waline/client/dist/pageview.js"></script>
-        <script>
-            initTB("evolve",{
-                style:{ //不设置的话就别写这个style属性
-                    width:"100%",   //设置宽度
-                    height: "10%" //这个属性没啥用
-                },
-                sourceHref: "https://mytest.firehomework.xyz:2053/", //接口
-                listenTimeOut: 5 //以秒为单位的更新
-            });
-        </script>
+
 <script>
   Waline.pageviewCount({
     serverURL: 'https://waline.firehomework.xyz',
