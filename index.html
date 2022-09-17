@@ -13,15 +13,11 @@ cover: false
   </li>
 </ul>
 </header>
-<h1>进化1-游玩情况一览表</h1>
-<div id="evolve">
-</div>
 
 <hr class="stylish"/>
 
-
 <main class="home-main">
-
+<div id="evolve"></div>
   {% for collection in site.collections %}
     {% if collection.docs.size > 0 %}
     <section id="posts">
